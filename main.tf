@@ -86,7 +86,7 @@ resource "aws_instance" "server" {
 		Name = "Server"	
 	}
 	
-	user_data = "${file("install.sh")}" //skrypt uruchomiony przy pierwszym uruchomieniu instancji
+	
 	
 	connection { //parametry ołączenia ssh z instancją
 		type = "ssh"
